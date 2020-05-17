@@ -5,7 +5,7 @@ const burger = require("../models/burger.js");
 router.get("/", function (req, res) {
   burger.selectAll(function (data) {
     let hbsObject = {
-      cats: data,
+      burgers: data,
     };
     res.render("index", hbsObject);
   });
@@ -22,13 +22,13 @@ router.post("/api/burgers", function (req, res) {
 });
 
 router.put("/api/burgers/:id", function (req, res) {
-  const status = `id = ${req.params.id}`;
+  var condition = "id = " + req.params.id;
 
   burger.updateOne(
     {
       devoured: req.body.devoured,
     },
-    status,
+    condition,
     function (result) {
       if (result.changedRows == 0) {
         return res.status(404).end();
