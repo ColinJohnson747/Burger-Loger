@@ -1,9 +1,8 @@
 <h1 style="text-align: center;">Eat-da-Burger!</h1>
-<div class="card" style="width: 18rem;">
-  <img src="burger.jpg" class="card-img-top" alt="burger" width="500" height="500">
-</div>
 
 
+<div class="row">
+ <div class="col-6">
 <h2>Time to chow down!</h2>
 
 <ul>
@@ -13,9 +12,9 @@
         {{/unless}}
     {{/each}}
 </ul>
-
+</div>
 <h2>You Already ate these!</h2>
-
+<div class="col-6"></div>
 <ul>
     {{#each burgers}}
         {{#if devoured}}
@@ -23,7 +22,8 @@
         {{/if}}
     {{/each}}
 </ul>
-
+</div>
+</div>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
