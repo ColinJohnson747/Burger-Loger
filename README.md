@@ -1,6 +1,6 @@
 # Burger-Loger
 
-This application is designed to track the status of burgers through front and back end Javascript, Handlebars, Express, and Mysql. The application will log all inputs from the HTML, utilize different requests, and then send those requests to the server, changing and storing the data.
+This application is designed to track the status of burgers through front and back end Javascript, Handlebars, Express, and MySQL. The application will log all inputs from the HTML, utilize different requests, and then send those requests to the server, changing and storing the data.
 
 The application is straight forward to use, with buttons to either delete, eat, or add a burger.
 
